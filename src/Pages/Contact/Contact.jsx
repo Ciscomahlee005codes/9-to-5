@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,16 +11,15 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
-   const navigate = useNavigate();
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
       <p>Have a question or need support? We’re here to help!</p>
 
       <form
-         action={import.meta.env.VITE_GETFORM_ENDPOINT}
+        action={import.meta.env.VITE_GETFORM_ENDPOINT}
         method="POST"
         className="contact-form"
       >
@@ -60,7 +58,12 @@ const Contact = () => {
           required
         ></textarea>
 
-        <button type="submit" onClick={()=> navigate('/')}>Send Message</button>
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://9-to-5.vercel.app/thank-you"
+        />
+        <button type="submit">Send Message</button>
       </form>
     </div>
   );
