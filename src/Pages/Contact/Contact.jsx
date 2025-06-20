@@ -19,7 +19,7 @@ const Contact = () => {
       <p>Have a question or need support? We’re here to help!</p>
 
       <form
-        action='https://getform.io/f/bkknrkpb'
+        action="https://getform.io/f/bkknrkpb"
         method="POST"
         className="contact-form"
       >
@@ -61,8 +61,9 @@ const Contact = () => {
         <input
           type="hidden"
           name="_redirect"
-          value="https://9-to-5.vercel.app/"
+          value="https://9-to-5.vercel.app/thank-you"
         />
+
         <button type="submit">Send Message</button>
       </form>
     </div>

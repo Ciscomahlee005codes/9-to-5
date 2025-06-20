@@ -6,6 +6,7 @@ const Jobs = lazy(()=> import('./Pages/Jobs/Jobs'))
 const NotFound = lazy(()=> import('./Pages/NotFound/NotFound'));
 import Footer from './Components/Footer/Footer'
 import Loader from "./Components/Loader/Loader";
+import ThankYou from "./Components/ThankYou/ThankYou";
 const JobDetails = lazy(()=> import('./Pages/Jobs/JobDetails'))
 const Contact = lazy(()=> import('./Pages/Contact/Contact'))
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="*" element={<NotFound />}/>
         <Route path="/jobs/:id" element={<JobDetails />}/>
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
         <Footer />
        </Suspense>
