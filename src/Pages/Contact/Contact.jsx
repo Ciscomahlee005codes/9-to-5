@@ -61,7 +61,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="_redirect"
-          value="https://9-to-5.vercel.app/thank-you"
+          value="https://9-to-5.vercel.app/"
         />
         <button type="submit">Send Message</button>
       </form>
