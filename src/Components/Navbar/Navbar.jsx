@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import './Navbar.css'
 import {NavLink, Link, useNavigate } from 'react-router-dom'
 import { FaSearch, FaHome, FaBriefcase } from "react-icons/fa";
@@ -8,7 +8,8 @@ import { FaInfoCircle } from "react-icons/fa";
 const Navbar = () => {
 
   const navigate = useNavigate();
-  const [activeNav, setActiveNav] = useState('Home')
+  const location = useLocation();
+
   return (
     <header>
       <div className="nav-container">
@@ -22,39 +23,47 @@ const Navbar = () => {
         <button onClick={()=> navigate('/jobs')}>Get Started</button>
       </div>
 
-       {/* Bottom Mobile Nav */}
-      <div className="bottom-navbar">
-        <Link
-          to="/"
-          className={activeNav === "Home" ? "active" : ""}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <FaHome id="down-icon" />
-          <span style={{ fontSize: "15px" }}>Home</span>
-        </Link>
-          <li id='link' 
-          className={activeNav === "About" ? "active" : ""}
-          style={{ display: "flex", flexDirection: "column" }}
-          >
-           <FaInfoCircle  style={{ fontSize: "20px", color: '#333' }}/>
-          <a style={{ fontSize: "15px" }} href="#aboutUs">About Us</a></li>
-        <Link
-          to="/jobs"
-          className={activeNav === "Jobs" ? "active" : ""}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <FaBriefcase id="down-icon" />
-          <span style={{ fontSize: "15px" }}>Jobs</span>
-        </Link>
-        <Link
-          to="/contact"
-          className={activeNav === "Contact" ? "active" : ""}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <FaPhone id="down-icon" />
-          <span style={{ fontSize: "15px" }}>Contact</span>
-        </Link>
-      </div>
+     {/* Bottom Mobile Nav */}
+<div className="bottom-navbar">
+  <Link
+    to="/"
+    className={location.pathname === "/" ? "active" : ""}
+    style={{ display: "flex", flexDirection: "column" }}
+  >
+    <FaHome id="down-icon" />
+    <span style={{ fontSize: "15px" }}>Home</span>
+  </Link>
+
+  <li
+    id="link"
+    className={location.hash === "#aboutUs" ? "active" : ""}
+    style={{ display: "flex", flexDirection: "column" }}
+  >
+    <FaInfoCircle style={{ fontSize: "20px", color: "#333" }} />
+    <a style={{ fontSize: "15px" }} href="#aboutUs">
+      About Us
+    </a>
+  </li>
+
+  <Link
+    to="/jobs"
+    className={location.pathname === "/jobs" ? "active" : ""}
+    style={{ display: "flex", flexDirection: "column" }}
+  >
+    <FaBriefcase id="down-icon" />
+    <span style={{ fontSize: "15px" }}>Jobs</span>
+  </Link>
+
+  <Link
+    to="/contact"
+    className={location.pathname === "/contact" ? "active" : ""}
+    style={{ display: "flex", flexDirection: "column" }}
+  >
+    <FaPhone id="down-icon" />
+    <span style={{ fontSize: "15px" }}>Contact</span>
+  </Link>
+</div>
+
     </header>
   )
 }

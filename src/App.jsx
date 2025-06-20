@@ -1,14 +1,18 @@
 import { Route, Routes } from "react-router-dom"
-import { lazy, Suspense } from "react"
+import { Suspense } from "react"
 import Navbar from "./Components/Navbar/Navbar"
-const Home = lazy(()=> import('./Pages/Home/Home'));
-const Jobs = lazy(()=> import('./Pages/Jobs/Jobs'))
-const NotFound = lazy(()=> import('./Pages/NotFound/NotFound'));
-import Footer from './Components/Footer/Footer'
-import Loader from "./Components/Loader/Loader";
-import ThankYou from "./Components/ThankYou/ThankYou";
-const JobDetails = lazy(()=> import('./Pages/Jobs/JobDetails'))
-const Contact = lazy(()=> import('./Pages/Contact/Contact'))
+import Footer from "./Components/Footer/Footer"
+import Loader from "./Components/Loader/Loader"
+import ThankYou from "./Components/ThankYou/ThankYou"
+import DelayLoader from "./Components/Loader/DelayLoader"
+
+
+const Home = DelayLoader(() => import('./Pages/Home/Home'), 3000);
+const Jobs = DelayLoader(() => import('./Pages/Jobs/Jobs'), 3000);
+const JobDetails = DelayLoader(() => import('./Pages/Jobs/JobDetails'), 3000);
+const Contact = DelayLoader(() => import('./Pages/Contact/Contact'), 3000);
+const NotFound = DelayLoader(() => import('./Pages/NotFound/NotFound'), 3000);
+
 function App() {
  
 
