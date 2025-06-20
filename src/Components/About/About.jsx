@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom'
 import AboutImage from '../../assets/About-img.jpg'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import "./About.css";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div id="aboutUs">
        <h2 className="about-head">About Us</h2>
@@ -29,7 +31,7 @@ const About = () => {
           just a job board. It’s your launchpad for a brighter, bolder
           professional future.
         </p>
-       <div className="btn"> <button>Explore 9 to 5 <IoIosArrowRoundForward /> </button></div>
+       <div className="btn"> <button onClick={()=> navigate('/jobs')}>Explore 9 to 5 <IoIosArrowRoundForward /> </button></div>
       </div>
     </div>
     </div>
