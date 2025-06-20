@@ -1,0 +1,108 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "Paystack",
+      "location": "Lagos, Nigeria",
+      "salary": "₦350,000/month",
+      "description": "Join our frontend team to build responsive web apps using React.js and TailwindCSS."
+    },
+    {
+      "id": 2,
+      "title": "Mobile App Developer",
+      "company": "Flutterwave",
+      "location": "Remote",
+      "salary": "₦400,000/month",
+      "description": "We’re looking for a React Native developer to maintain and build cross-platform mobile apps."
+    },
+    {
+      "id": 3,
+      "title": "Backend Engineer",
+      "company": "Kuda Bank",
+      "location": "Abuja, Nigeria",
+      "salary": "₦420,000/month",
+      "description": "Work on scalable backend services using Node.js and MongoDB in a microservices architecture."
+    },
+    {
+      "id": 4,
+      "title": "Digital Marketing Specialist",
+      "company": "Techpoint Africa",
+      "location": "Remote",
+      "salary": "₦300,000/month",
+      "description": "Plan and execute digital campaigns across various social media platforms to drive engagement and conversions."
+    },
+    {
+      "id": 5,
+      "title": "Graphic Designer",
+      "company": "PiggyVest",
+      "location": "Lagos, Nigeria",
+      "salary": "₦250,000/month",
+      "description": "Create visual assets for marketing campaigns, social media, and web design projects."
+    },
+    {
+      "id": 6,
+      "title": "Customer Support Officer",
+      "company": "Opay",
+      "location": "Ibadan, Nigeria",
+      "salary": "₦150,000/month",
+      "description": "Provide excellent support and resolve customer issues via phone, email, or chat."
+    },
+    {
+      "id": 7,
+      "title": "Sales Representative",
+      "company": "Jumia",
+      "location": "Port Harcourt, Nigeria",
+      "salary": "₦180,000/month + commission",
+      "description": "Identify leads, manage client relationships, and close deals in the e-commerce industry."
+    },
+    {
+      "id": 8,
+      "title": "Office Assistant",
+      "company": "UBA Bank",
+      "location": "Enugu, Nigeria",
+      "salary": "₦100,000/month",
+      "description": "Support administrative tasks such as filing, photocopying, and document delivery within the office."
+    },
+    {
+      "id": 9,
+      "title": "Content Writer",
+      "company": "BellaNaija",
+      "location": "Remote",
+      "salary": "₦200,000/month",
+      "description": "Write and publish engaging content for lifestyle, fashion, and entertainment audiences."
+    },
+    {
+      "id": 10,
+      "title": "Data Analyst",
+      "company": "Cowrywise",
+      "location": "Lagos, Nigeria",
+      "salary": "₦400,000/month",
+      "description": "Analyze data and create dashboards to support business decisions and strategy."
+    },
+    {
+      "id": 11,
+      "title": "Project Manager",
+      "company": "Softcom",
+      "location": "Abuja, Nigeria",
+      "salary": "₦450,000/month",
+      "description": "Manage cross-functional teams and ensure successful delivery of software development projects."
+    },
+    {
+      "id": 12,
+      "title": "Receptionist",
+      "company": "Sheraton Hotel",
+      "location": "Lagos, Nigeria",
+      "salary": "₦120,000/month",
+      "description": "Welcome guests, answer phone calls, and manage front desk activities professionally."
+    },
+    {
+      "id": 13,
+      "title": "Logistics Supervisor",
+      "company": "Konga Logistics",
+      "location": "Abeokuta, Nigeria",
+      "salary": "₦220,000/month",
+      "description": "Coordinate delivery schedules, monitor shipments, and manage warehouse activities."
+    }
+  ]
+}

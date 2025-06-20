@@ -1,0 +1,113 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+.foot-head{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-brand h2 {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #00cc66;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.footer-links a,
+.footer-contact a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #00cc66;
+}
+
+.footer-social .social-icons a {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #00cc66;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+/* Responsive Design */
+@media (max-width: 884px) {
+  .footer-brand p{
+    width: 55%;
+  }
+  .footer-bottom{
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer-top {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+}
+@media (max-width: 414px) {
+  .foot-head{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+}
+@media (max-width: 360px) {
+  .foot-head{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.footer-contact li{
+  font-size: 12px;
+}
+.social-icons{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+ .footer-brand p{
+    width: 55%;
+    font-size: 15px;
+  }
+}

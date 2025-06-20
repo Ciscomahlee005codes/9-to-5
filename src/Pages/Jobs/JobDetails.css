@@ -1,0 +1,43 @@
+.detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 50vh;
+}
+.detail-content h2{
+    text-align: center;
+}
+.info{
+    line-height: 2rem;
+}
+.btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn button {
+  padding: 10px 25px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 884px) {
+  .detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 2rem;
+}
+}
+@media (max-width: 834px) {
+  .detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 60vh;
+   padding: 45px;
+}
+}

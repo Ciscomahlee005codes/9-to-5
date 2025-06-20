@@ -1,0 +1,116 @@
+.header{
+    height: 35vw;
+    /* margin: 30px auto; */
+    background: url('/Heo-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 50px;
+    /* filter: brightness(80%); */
+    margin: 50px;
+}
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35vw;
+     border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-content h2{
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: max(4vw,22px);
+}
+.header-content p{
+    font-size: 15px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.header-content button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.5vw;
+    background-color: aliceblue;
+    font-size: max(1vw, 13px);
+    border-radius: 30px;
+}
+.hero-swiper {
+  width: 100%;
+  position: relative;
+}
+
+.swiper {
+  border-radius: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   color: green !important;
+  fill: green !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: green !important;
+  /* opacity: 1 !important; */
+}
+.swiper-pagination-bullet-active {
+    background-color: green !important;
+}
+@media (max-width: 430px) {
+  .swiper-button-next,
+.swiper-button-prev {
+   display: none !important;
+}
+.header{
+    height: 45vw;
+    width: 90%;
+    /* margin: 30px auto; */
+    background: url('/Heo-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 30px;
+    /* filter: brightness(80%); */
+    margin: 30px;
+}
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vw;
+     border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.header-content p{
+    display: none;
+}
+}
+

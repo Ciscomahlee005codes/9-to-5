@@ -1,0 +1,9 @@
+.not-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-top: 15rem;
+}
+.not-content h3{
+   transform: translate(-10%,-10rem);
+}
