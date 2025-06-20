@@ -19,7 +19,7 @@ const Contact = () => {
       <p>Have a question or need support? We’re here to help!</p>
 
       <form
-        action={import.meta.env.VITE_GETFORM_ENDPOINT}
+        action='https://getform.io/f/bkknrkpb'
         method="POST"
         className="contact-form"
       >
