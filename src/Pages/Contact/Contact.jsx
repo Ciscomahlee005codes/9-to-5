@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-
+   const navigate = useNavigate();
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
@@ -59,7 +60,7 @@ const Contact = () => {
           required
         ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" onClick={()=> navigate('/')}>Send Message</button>
       </form>
     </div>
   );
